@@ -1,6 +1,4 @@
-bool isCyclicBFS(int src, vector<int> adj[]){
-    unordered_map<int,bool> visited;
-    unordered_map<int,int> parent;
+bool isCyclicBFS(int src, vector<int> adj[], unordered_map<int,bool>& visited, unordered_map<int,int>& parent){
     queue<int> q;
     q.push(src);
     visited[src] = true;
@@ -26,10 +24,14 @@ bool isCyclicBFS(int src, vector<int> adj[]){
 bool isCycle(int V, vector<int> adj[]) {
     // Code here
     // Disconnected graph h iss liye ye loop lgayi h
+    unordered_map<int,bool> visited;
+    unordered_map<int,int> parent;
     for(int i=0; i<V; i++){
-        bool ans = isCyclicBFS(i,adj);
-        if(ans == true){
-            return true;
+        if(!visited[i]){
+            bool ans = isCyclicBFS(i,adj,visited,parent);
+            if(ans == true){
+                return true;
+            }   
         }
     }
     return false;
