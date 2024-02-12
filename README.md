@@ -8,7 +8,6 @@ This repository contains programming questions based on Graph.
 - Topological sort using Kahn's algo and dfs. https://practice.geeksforgeeks.org/problems/topological-sort/1
 - Shortest path in undirected graph.
   https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1
-  https://www.geeksforgeeks.org/problems/shortest-path-in-weighted-undirected-graph/1
 - Shortest path in directed acyclic graph. https://practice.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/1
 - Dijkstra's Algorithm. https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1
 - Prim's Algorithm. https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1
