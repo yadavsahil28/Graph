@@ -1,0 +1,55 @@
+    void topoSortDFS(int src, vector<pair<int,int>> adj[], vector<bool>& vis, stack<int>& s){
+        vis[src] = true;
+        
+        for(pair<int,int> i: adj[src]){
+            int neighbour = i.first;
+            if(!vis[neighbour]){
+                topoSortDFS(neighbour,adj,vis,s);
+            }
+        }
+        s.push(src);
+    }
+    
+    vector<int> shortestPath(int N,int M, vector<vector<int>>& edges){
+        // code here
+        vector<pair<int,int>> adj[N];
+        for(int i=0; i<M; i++){
+            int u = edges[i][0];
+            int v = edges[i][1];
+            int w = edges[i][2];
+            
+            adj[u].push_back(make_pair(v,w));
+        }
+        
+        vector<bool>vis(N, false);
+        stack<int> s;
+        
+        for(int i=0; i<N; i++){
+            if(!vis[i]){
+                topoSortDFS(i,adj,vis,s);
+            }
+        }
+        
+        vector<int>dist(N, 1e9);
+        dist[0] = 0;
+        
+        while(!s.empty()){
+            int top = s.top();
+            s.pop();
+            
+            for(pair<int,int> i: adj[top]){
+                int neighbour = i.first;
+                int distance = i.second;
+                
+                if(dist[neighbour] > dist[top] + distance){
+                    dist[neighbour] = dist[top] + distance;
+                }
+            }
+        }
+        
+        for(int i=0; i<N; i++){
+            if(dist[i] == 1e9) dist[i] = -1;
+        }
+        
+        return dist;
+    }
