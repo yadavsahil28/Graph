@@ -11,8 +11,8 @@ This repository contains programming questions based on Graph.
   https://www.codingninjas.com/studio/problems/shortest-path-in-an-unweighted-graph_981297
 - Shortest path in directed acyclic graph. https://practice.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/1
 - Dijkstra's Algorithm. https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1
-- Prim's Algorithm. https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1
-- Kruskal's Algorithm https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1
+- Prim's Algorithm. https://www.codingninjas.com/studio/problems/prim-s-mst_1095633
+- Kruskal's Algorithm https://www.codingninjas.com/studio/problems/kruskal-s-minimum-spanning-tree-algorithm_1082553
 - Bridge in a graph. https://practice.geeksforgeeks.org/problems/bridge-edge-in-graph/1
 - Kosaraju Algorithm. https://www.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1
 - Bellman Ford Algorithm. https://practice.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/0?fbclid=IwAR2_lL0T84DnciLyzMTQuVTMBOi82nTWNLuXjUgahnrtBgkphKiYk6xcyJU
