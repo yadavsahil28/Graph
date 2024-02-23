@@ -25,5 +25,5 @@ This repository contains programming questions based on Graph.
 - Word Search https://practice.geeksforgeeks.org/problems/word-search/1
 - Minimum Cost Path https://practice.geeksforgeeks.org/problems/minimum-cost-path3833/1
 - Find Number of Closed Islands https://practice.geeksforgeeks.org/problems/find-number-of-closed-islands/1
-- Check if graph is a tree https://www.geeksforgeeks.org/check-given-graph-tree/ 
+- Check if graph is a tree https://www.geeksforgeeks.org/problems/is-it-a-tree/1
 
